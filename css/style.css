@@ -511,5 +511,33 @@ img {
    line-height: 2em;
    border-radius: 15px;
    padding: 0.5em 1em;
-   margin: 0.5em 3em;
+   margin: 0.5em 2em;
+}
+
+.dropdowntekst p{
+    font-size: 15px;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 0.5em;
+}
+
+/* DROPDOWN BOKSE SLUT */
+
+.husk{
+    font-size: 22px;
+    padding-bottom: 0.2em;
+    padding-top: 2em;
+}
+
+.huskunderskrift{
+    font-size: 18px;
+    padding-bottom: 2em;
+    max-width: 90%;
+}
+
+.underdel{
+    padding-left: 1.5em;
 }
