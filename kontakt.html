@@ -68,6 +68,48 @@
 
         </section>
 
+        <!-- Kontaktformular -->
+        <section class="kontaktformular">
+
+            <h2>Udfyld kontaktformularen</h2>
+            <p>og vi kontakter dig hurtigst muligt</p>
+
+            <form action="#">
+
+            <label class="visually-hidden" for="navn">Navn</label>
+            <input id="navn" type="text" placeholder="Navn" required>
+
+            <label class="visually-hidden" for="mail">E-mail</label>
+            <input id="mail" type="email" placeholder="E-mail" required>
+
+            <label class="visually-hidden" for="telefon">Telefon</label>
+            <input id="telefon" type="tel" placeholder="Telefon" required>
+
+            <label for="besked">Besked</label>
+            <textarea id="besked" cols="30" rows="10"></textarea>
+
+            <fieldset>
+                <legend>Vil du kontaktes via mail, telefon eller sms?</legend>
+
+                <input id="mail" type="radio" name="kontakt">
+                <label for="mail">E-mail</label>
+
+                <input id="opkald" type="radio" name="kontakt">
+                <label for="opkald">Ring mig op</label>
+
+                <input id="sms" type="radio" name="kontakt">
+                <label for="sms">SMS</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send besked">
+        </form>
+
+
+
+
+        </section>
+
+
 
 
 
