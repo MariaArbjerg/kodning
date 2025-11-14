@@ -130,11 +130,14 @@ main{
 /* MENUBOKSENE */
 
 .menubokse {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
+    text-decoration: none;
+    color: #000000;
+    display: grid;
+    grid-template-columns: repeat(3), 1fr;
+    gap: 2rem;
+    align-items: stretch;
 }
 
 .online-sikkerhed, .digital-sikkerhed, .kritisk-taenkning {
@@ -144,6 +147,8 @@ main{
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1em;
+    text-decoration: none;
+    color: #000000;
 }
 
 .os-billede {
@@ -174,14 +179,6 @@ main{
 
 .menubokse button:hover {
     background-color: #054b80;
-}
-
-/* GRID opsætning af menubokse */
-.menubokse {
-    display: grid;
-    grid-template-columns: repeat(3), 1fr;
-    gap: 2rem;
-    align-items: stretch;
 }
 
 /* FOOTER */
@@ -218,10 +215,9 @@ footer button {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
         margin-right: 50px;
 
-a{
+a {
     text-decoration: none;
     color: black;
-
 }
        
 
@@ -483,13 +479,14 @@ footer p:last-child {
 
 
 
-
-
-
-
-
-
-
-
-
 /*-------------------------------ONLINE SIKKERHED SIDEN-------------------------------*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.overskrift-os {
+    font-size: 22px;
+    line-height: 2em;
+}
