@@ -218,6 +218,13 @@ footer button {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
         margin-right: 50px;
 
+a{
+    text-decoration: none;
+    color: black;
+
+}
+       
+
 }
 /* Stylig af 'følg os' */
 footer p:first-child {
