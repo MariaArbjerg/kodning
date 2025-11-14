@@ -386,7 +386,7 @@ footer p:last-child {
 
     .menupunkter nav ul{
         display: flex;
-        flex-wrap: wrap;          /* hvis der bliver for trangt */
+        flex-wrap: wrap; /* hvis der bliver for trangt */
         justify-content: center;  /* centrer punkter vandret */
         gap: 12px;
         width: 100%;
@@ -406,7 +406,7 @@ footer p:last-child {
         padding: 10px 14px;
         font-size: 18px;
         font-weight: 700;
-        white-space: nowrap;      /* undgå linjeskift i et enkelt ord */
+        white-space: nowrap; /* undgå linjeskift i et enkelt ord */
         text-decoration: none;
         color: #000000;
     }
@@ -498,3 +498,18 @@ img {
     max-width: 90%;
 }
 
+/* DROPDOWN BOKSE */
+
+.dropdowntekst{
+    width: 80%;
+    margin-top: 2em;
+}
+
+.dpbox1, .dpbox2, .dpbox3, .dpbox4, .dpbox5{
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border: 0.5px solid #000000;
+   line-height: 2em;
+   border-radius: 15px;
+   padding: 0.5em 1em;
+   margin: 0.5em 3em;
+}
