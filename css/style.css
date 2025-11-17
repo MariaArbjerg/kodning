@@ -554,6 +554,17 @@ summary {
         object-fit: cover;
         border-top: 2px solid #0764B0;
     }
+
+    .overskrift-os{
+        font-size: 50px;
+    }
+
+    .underskrift-os{
+        font-size: 22px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
     
     .dpboxe-desktop{
         display: grid;
@@ -570,7 +581,20 @@ summary {
         grid-column: 2 / 1;
     }
 
+    .dropdowntekst1 {
+        margin-left: 150px;
+    }
 
+    .underdel {
+        margin-top: 3.5em;
+        padding-left: 35px;
+        border-left: 10px dotted #0764B0;
+
+    }
+
+    .husk{
+        padding-top: 1em;
+    }
 
 }
 
