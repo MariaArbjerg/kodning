@@ -544,6 +544,15 @@ summary {
     padding-left: 1.5em;
 }
 
+/* ONLINE SIKKERHED - RESPONSIV TIL DESKTOP */
+@media only screen and (min-width: 769px){
+
+
+
+
+
+
+}
 
 
 
@@ -650,6 +659,7 @@ legend {
 label {
     margin-right: 0.5em;
 }
+
 .visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -661,7 +671,7 @@ label {
 	width: 1px;
 }
 
-/*RESPONSIV TIL DESKTOP*/
+/* KONTAKT - RESPONSIV TIL DESKTOP*/
 
 @media only screen and (min-width: 769px){
 
@@ -692,5 +702,6 @@ label {
 .ringskrivsec{
     margin-top: 2em;
 }
+
 }
 
