@@ -549,3 +549,62 @@ summary {
 /*----------------------------------KONTAKT OS SIDEN---------------------------------------*/
 
 
+.kontaktform {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 1.3em;
+  width: 50%;
+  margin: 0 auto; /*Centrerer elementet på siden*/
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+select, input[type=checkbox], input[type=radio], input[type=subit]{
+	cursor: pointer;
+}
+
+fieldset{
+	border-style: hidden; /*Hidden hvis den skal forsvinde*/
+	margin-bottom: 0.8em;
+}
+
+input[type=checkbox]{
+	margin: 0.8em 0;
+}
+
+input[type=submit]{
+	background-color: #ABFCFB;
+	color: rgb(0, 0, 0);
+	padding: 0.8em 1.5em;
+	border: 1px solid #000000;
+	border-radius: 15px;
+	width: 8em;
+	font-size: 18px;
+}
+
+input[type=submit]:hover{
+	background-color: #0764B0;
+    color: #ffffff;
+}
+
+::placeholder{
+	color: #333;
+}
+
+.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
