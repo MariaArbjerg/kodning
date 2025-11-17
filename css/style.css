@@ -654,3 +654,22 @@ label {
 	position: absolute;
 	width: 1px;
 }
+
+/*RESPONSIV TIL DESKTOP*/
+
+@media only screen and (min-width: 769px){
+
+.topko-prim{
+    display: flex;
+    }
+
+.ringtilos, .skrivtilos{
+    width: 500px;
+    height: auto;
+    margin-right: 100px;
+    }
+
+
+    
+}
+
