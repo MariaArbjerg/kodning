@@ -668,6 +668,7 @@ label {
 .topko-prim{
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid #0764B0;
     }
 
 .ringtilos, .skrivtilos{
@@ -678,11 +679,18 @@ label {
 
 .top-ko{
     width: auto;
+    min-width: 500px;
     height: auto;
     margin-left: 100px;
     }
+
 .h1ko {
     margin-left: 0.4em;
+    margin-top: 2em;
+}
+
+.ringskrivsec{
+    margin-top: 2em;
 }
 }
 
