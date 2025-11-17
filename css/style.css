@@ -625,6 +625,7 @@ input[type=submit]{
 	width: 8em;
 	font-size: 18px;
     cursor: pointer;
+    margin-top: 1em;
 }
 
 input[type=submit]:hover{
@@ -641,7 +642,7 @@ legend {
 }
 
 label {
-    margin-right: 2em;
+    margin-right: 0.5em;
 }
 .visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
 	border: 0;
