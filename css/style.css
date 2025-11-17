@@ -498,13 +498,14 @@ img {
     font-size: 18px;
     padding-left: 1.5em;
     max-width: 90%;
+    margin-bottom: 2em;
 }
 
 /* DROPDOWN BOKSE */
 
-.dropdowntekst{
+.dropdowntekst1, .dropdowntekst2{
     width: 80%;
-    margin-top: 2em;
+
 }
 
 .dpbox1, .dpbox2, .dpbox3, .dpbox4, .dpbox5{
@@ -553,8 +554,21 @@ summary {
         object-fit: cover;
         border-top: 2px solid #0764B0;
     }
+    
+    .dpboxe-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em;
+    }
 
+    .dpbox1, .dpbox2, .dpbox3{
+        grid-area: 1 / 1;
+    }
 
+    .dpbox4, .dpbox5, .underdel{
+        grid-column: 2 / 1;
+    }
 
 
 
@@ -706,7 +720,7 @@ label {
 }
 
 .ringskrivsec{
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 }
