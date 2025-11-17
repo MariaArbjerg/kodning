@@ -547,6 +547,12 @@ summary {
 /* ONLINE SIKKERHED - RESPONSIV TIL DESKTOP */
 @media only screen and (min-width: 769px){
 
+    .topbillede-os {
+        max-width: auto;
+        max-height: 700px;
+        object-fit: cover;
+        border-top: 2px solid #0764B0;
+    }
 
 
 
