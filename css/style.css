@@ -1,29 +1,30 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+body{
     background-color: #f2f2f2;
 }
 
+/* Header */
 
-
-/*Navigation og header*/
-
-header {
+header{
     background-color: #f2f2f2;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr 1fr 5% 5% 2%;
+    align-items: center;
+    position: relative;
 }
 
-button#search, .Navigation{
-    display: flex;
-    justify-content: flex-start;
-    gap: 2em;
+header img{
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    grid-column: 1;
+    padding-left: 0px;
 }
 
 button#search {
@@ -31,105 +32,84 @@ button#search {
     font-size: 30px;
     border: none;
     cursor: pointer;
+    grid-column: 6;
+    justify-self: end;
 }
 
-button#search:hover {
-    color: #0764B0;
+/* navigation */
+
+header nav{
+    display: none;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul{
+    list-style: none;
+    padding: 0;
 }
 
-nav li {
-    padding: 0.8em;
+header nav.show{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0764b0;
+    z-index: 10;
+    padding: 0;
 }
 
-nav li a {
-    color: #000000;
-    text-decoration: none; /* fjerner understregning */
+header nav.show li a{
+    display: block;
+    padding: 6px 16px;
+    line-height: 1.2;
+    padding: 0.5em 0.5em;
+}
+
+nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
-    padding: 0.5em 1em; /* luft omkring teksten */
+    font-weight: 600;
 }
 
-nav li a:hover {
-    cursor: pointer; /* ændrer cursor til pointer ved hover */
-    color: #0764B0; /* ændrer tekstfarve ved hover */
+nav li a:hover{
+    cursor: pointer;
+    color: #0764b0;
     background-color: #ffffff;
-    border-radius: 5px; /* rundede hjørner ved hover */
 }
 
-
-.LogoTrygOnline {
-    width: 200px;
-    position: relative;
-}
-
-
-
-
-
-
-/* Hero */
-
-main{
-    margin: 0;
-    padding: 0;
-}
-
-/* HERO */
-.Hero {
-    align-items: center;
-    gap: 5em;
-    padding: 0;
+button#bars{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    grid-column: 7;
+    justify-self: start;
 }
 
 /* Hero billede */
-.HeroBillede {
+
+.hero img{
     width: 100%;
     height: auto;
+    display: block;
     object-fit: cover;
 }
 
-/* Hero tekstfelt */
-.HeroText {
-    display: inline-block;
-    margin-top: 1em;
-    text-align: left;
-    margin-left: 1em;
+.hero h1{
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 15px;
 }
 
-/* Hero overskrift */
-.HeroText h1 {
-    font-size: 25px;
-    margin-bottom: 1rem;
+.highlightet{
+    font-size: 40px;
+    font-weight: 800;
 }
 
-.highlightet {
-    font-size: 35px;
-}
-
-/* Hero knap */
-.HeroText button {
-    background-color: #0764B0;
-    color: #ffffff;
-    border: 0.1px solid #000000;
-    padding: 0.6em 1em;
-    border-radius: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 1em;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.HeroText button:hover {
-    background-color: #054b80;
-}
-
-
-/* MENUBOKSENE */
+/* Hovedindhold */
 
 .menubokse {
     margin-top: 2em;
@@ -182,299 +162,160 @@ main{
     background-color: #054b80;
 }
 
-/* FOOTER */
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.social-box{
+    grid-column: 1;
+    object-fit: center;
+    margin-left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+footer p:first-child{
+    padding-bottom: 10px;
+    padding-left: 8px;
+    font-weight: 700;
+}
+
+footer p:last-child{
+    grid-column: 1 / 4;
+    justify-self: center;
+    grid-row: 3;
+}
+
+footer button{
+    grid-column: 3 / 4;
+    justify-self: center;
+    background-color: #ABFCFB;
+    color: #000000;
+    border: 0.5px solid #000000;
+    padding: 0.6em 1em;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* FORSIDE - RESPONSIV TIL DESKTOP */
+@media only screen and (min-width: 769px){
+
+    /*Header*/
+#bars{
+    display: none;
+}
+
+header {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2% 1fr 80% 1fr 2%;
+}
+
+header nav{
+    display: block;
+    position: static;
+    background: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li{
+    list-style: none;
+}
+
+header nav li a {
+    white-space: nowrap;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* Hovedindhold */
+.menupunkter{
+    grid-column: 2 / span 5;
+    max-width: 100%;
+}
+
+button#search{
+    grid-column: 4;
+    font-size: 50px;
+}
+
+.hero img{
+   max-width: auto;
+    max-height: 700px;
+    object-fit: cover;
+    border-top: 2px solid #0764B0;
+}
+
+.hero h1{
+    padding-left: 2em;
+}
+
+.menubokse{
+    display: flex;
+    justify-content: center; 
+    margin-top: 3em; 
+}
+
+.menubokse p{
+    width: 400px;
+}
+
+.os-billede{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer */
 
 footer{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr; 
-    grid-template-rows: 0.5fr 0.5fr; 
-    grid-template-areas: 
-    "icons knap"
-    "copy copy";
-    padding: 1em;
+    padding: 10em 0;
 }
 
-/* Sociale medier ikon */
 .social-box{
-    grid-area: icons;
-    margin-left: 1.0em;
-    margin-top: 1.0em;
-    font-size: 12px;
+    font-size: 20px;
+    padding-left: 5em;
+    text-align: center;
+}
+
+footer p:last-child{
+    font-size: 20px;
+}
+
+footer button{
+    padding: 1.5em;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 6em;
+}
+
 }
 
 
 
-/* Kontakt knap */
-footer button {
-  grid-area: 1 / 3 / 2 / 3;
-        background-color: #ABFCFB;
-        color: #000000;
-        border: 0.5px solid #000000;
-        padding: 0.6em 1em;
-        border-radius: 15px;
-        font-size: 20px;
-        cursor: pointer;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        margin-right: 50px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-       
-
-/* Stylig af 'følg os' */
-footer p:first-child {
-    margin: 0.5em;
-    font-size: 18px;
-}
-
-/* Styling af 'copyright' */
-footer p:last-child {
-  grid-area: copy;
-  display: flex;
-  justify-content: center;
-  margin-top: 4em;
-  
-}
-
-    /* HEADER: logo til venstre, søgning + burger til højre */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; /* gør at burger og logo flugter lodret */
-        padding: 0.1em 2em; /* mindre padding så det kommer højere op */
-    }
-
-    .LogoTrygOnline {
-        width: 200px;
-    }
-
-    /* Skjul menu som standard */
-    header nav{
-        display: none;
-    }
-
-    /* Navigation til højre: søgefunktion og burger ved siden af hinanden */
-    .Navigation{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 0.75rem;
-    }
-
-    /* Rækkefølge: søgning først, burger nr. 2, menupunkter sidst */
-    .Navigation #search{
-        order: 1;
-    }
-
-    .Navigation .menupunkter{
-        order: 3;
-        width: 0;            /* fylder ikke mellem søgning og burger */
-    }
-
-    .Navigation #bars{
-        order: 2;
-    }
-
-    /* Når .show tilføjes vises menuen som dropdown */
-    header nav.show{
-        display: block;
-        position: absolute;
-        top: 130px; 
-        left: 0;
-        width: 100%;
-        background-color: #0764B0;
-        padding: 0;
-        z-index: 999;
-    }
-
-    /* Gør burgerknappen klikbar og synlig */
-    button#bars{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        z-index: 1000;
-        font-size: 30px;
-    }
-
-    /* Style menuen på mobil */
-    header nav.show ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header nav.show li a {
-        display: block;
-        padding: 6px 16px;
-        font-size: 18px;
-        color: #ffffff;
-        line-height: 1.2;
-        text-decoration: none;
-    }
-
-    header nav.show li a:hover {
-        cursor: pointer; /* ændrer cursor til pointer ved hover */
-        color: #0764B0; /* ændrer tekstfarve ved hover */
-        background-color: #ffffff;
-        border-radius: 10px; /* rundede hjørner ved hover */
-    }
-
-    /* HERO — mobil */
-    .Hero {
-        flex-direction: column; /* stå under hinanden */
-    }
 
 
 
-/* RESPONSIVT DESIGN - Desktop version */
-
-@media screen and (min-width: 769px){
-
-    /* Burger skjules på desktop */
-    #bars{
-        display: none; /* Fjerner elementet visuelt */
-    }
-
-    /* Header som grid: logo + søgning øverst, menu på linjen under */
-    header {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "logo search"
-            "menu menu";
-        align-items: center;
-        column-gap: 1rem;
-        padding: 1em 2em;
-    }
-
-    /* Logo i venstre side */
-    .LogoTrygOnline{
-        grid-area: logo;
-        width: 300px;         /* Bestemmer hvor stort logoet er */
-        height: auto;
-        display: block;
-    }
-
-    /* Navigation-containeren "opløses", så dens børn kan placeres i grid'et */
-    .Navigation{
-        display: contents;
-    }
-    
-    /* Søgeknap oppe til højre på linje med logo */
-    button#search{
-        grid-area: search;
-        justify-self: end;
-        font-size: 40px;
-        margin: 1.5em;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Menuen fylder hele rækken under logo + søgning */
-    .menupunkter{
-        grid-area: menu;
-        width: 100%;
-    }
-
-    .menupunkter nav{
-        display: block;
-        position: static;
-    }
-
-    .menupunkter nav ul{
-        display: flex;
-        flex-wrap: wrap; /* hvis der bliver for trangt */
-        justify-content: center;  /* centrer punkter vandret */
-        gap: 12px;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .menupunkter nav li{
-        padding: 0; /* linket styrer højden */
-    }
-
-    .menupunkter nav li a{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 14px;
-        font-size: 18px;
-        font-weight: 700;
-        white-space: nowrap; /* undgå linjeskift i et enkelt ord */
-        text-decoration: none;
-        color: #000000;
-    }
-
-    .menupunkter nav li a:hover{
-        cursor: pointer;
-        color: #0764B0;
-        background-color: #ffffff;
-        border-radius: 5px;
-    }
-
-    /* HERO — desktop */
-    .HeroBillede {
-        object-fit: cover;
-        max-height: 700px;
-    } 
-
-    .HeroText{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .HeroText h1{
-        line-height: 1.3;
-    }
-
-    /* MENUBOKSENE SÆTTES OP VED SIDEN AF HINANDEN */
-    .menubokse{
-        display: flex;
-        justify-content: center; /* De bliver centreret på siden vandret */
-        margin-top: 3em; /* Giver lidt luft op til */
-    }
-
-    .menubokse p{
-        width: 400px;
-    }
-
-    .os-billede{
-        width: 400px;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    /* Footer */
-    .social-box{
-        display: flex;
-        margin-top: 4em;
-        margin-left: 3em;
-    }
-
-
-    /* Footer knap */
-    footer button{
-        margin-top: 30px;
-        max-width: 300px;
-        position: right;
-    }
-
-    footer p:first-child{
-        padding-left: 4em;
-    }
-
-    footer p:last-child{
-        padding-left: 10em
-    }
-}
 
 
 
