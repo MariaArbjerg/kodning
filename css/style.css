@@ -251,9 +251,15 @@ button#search{
     font-size: 50px;
 }
 
-.hero{
-    object-fit: cover;
+.hero img{
+   max-width: auto;
     max-height: 700px;
+    object-fit: cover;
+    border-top: 2px solid #0764B0;
+}
+
+.hero h1{
+    padding-left: 2em;
 }
 
 .menubokse{
@@ -270,6 +276,18 @@ button#search{
     width: 400px;
     height: 300px;
     object-fit: cover;
+}
+
+/* Footer */
+
+footer{
+    padding-top: 10em;
+}
+
+.social-box{
+    font-size: 20px;
+    padding-left: 5em;
+    text-align: center;
 }
 
 
