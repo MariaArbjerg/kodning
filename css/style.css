@@ -16,6 +16,7 @@ header{
     display: grid;
     grid-template-columns: 40% 1fr 1fr 1fr 1fr 5% 5% 2%;
     align-items: center;
+    position: relative;
 }
 
 header img{
@@ -50,8 +51,10 @@ header nav.show{
     display: block;
     position: absolute;
     top: 100%;
+    left: 0;
+    right: 0;
     background-color: #0764b0;
-    grid-column: 1 / -1;
+    z-index: 10;
     padding: 0;
 }
 
