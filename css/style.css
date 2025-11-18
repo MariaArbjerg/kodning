@@ -294,6 +294,13 @@ footer p:last-child{
     font-size: 20px;
 }
 
+footer button{
+    padding: 1.5em;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
 }
 
 
