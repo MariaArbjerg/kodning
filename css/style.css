@@ -202,6 +202,66 @@ a{
     color: #000000;
 }
 
+
+/* 40% 1fr 1fr 1fr 1fr 5% 5% 2% */
+/* FORSIDE - RESPONSIV TIL DESKTOP */
+@media only screen and (min-width: 769px){
+
+#bars{
+    display: none;
+}
+
+header {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2% 1fr 80% 1fr 2%;
+}
+
+header nav{
+    display: contents;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li{
+    list-style: none;
+}
+
+header nav li a {
+    white-space: nowrap;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.menupunkter{
+   
+    grid-column: 2 / span 5;
+    max-width: 100%;
+}
+
+button#search{
+    grid-column: 4;
+    font-size: 50px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------ONLINE SIKKERHED SIDEN-------------------------------*/
 
 img {
