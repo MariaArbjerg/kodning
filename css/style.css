@@ -203,10 +203,10 @@ a{
 }
 
 
-/* 40% 1fr 1fr 1fr 1fr 5% 5% 2% */
 /* FORSIDE - RESPONSIV TIL DESKTOP */
 @media only screen and (min-width: 769px){
 
+    /*Header*/
 #bars{
     display: none;
 }
@@ -240,8 +240,8 @@ header nav li a {
     display: block;
 }
 
+/* Hovedindhold */
 .menupunkter{
-   
     grid-column: 2 / span 5;
     max-width: 100%;
 }
@@ -250,6 +250,28 @@ button#search{
     grid-column: 4;
     font-size: 50px;
 }
+
+.hero{
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.menubokse{
+    display: flex;
+    justify-content: center; 
+    margin-top: 3em; 
+}
+
+.menubokse p{
+    width: 400px;
+}
+
+.os-billede{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 }
 
