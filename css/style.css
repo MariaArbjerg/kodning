@@ -476,6 +476,8 @@ summary {
     font-weight: 600;
 }
 
+
+
 /*---- KONTAKTSFORMULAR ----*/
 
 .kontaktform {
@@ -484,14 +486,14 @@ summary {
   padding: 1.3em;
   border: 1px solid #000000;
   width: 50%;
-  min-width: 450px;
-  margin: 0 auto; /*Centrerer elementet på siden*/
+  min-width: 400px;
+  margin: 0 auto;
   margin-top: 6em;
   margin-bottom: 3em;
 }
 
 input[type=text], input[type=email], input[type=tel], select, textarea{
-	width: 100%;
+    width: 100%;
 	padding: 1em;
 	border: 1px solid #ccc;
 	border-radius: 4px;
