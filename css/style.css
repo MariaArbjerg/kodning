@@ -97,7 +97,7 @@ button#bars{
 }
 
 .hero h1{
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 10px;
     font-weight: 400;
     line-height: 1;
@@ -105,7 +105,7 @@ button#bars{
 }
 
 .highlightet{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     white-space: nowrap;
 }
@@ -117,7 +117,6 @@ button#bars{
     margin-bottom: 2em;
     color: #000000;
     display: grid;
-    grid-template-columns: repeat(3), 1fr;
     gap: 2rem;
     align-items: stretch;
 }
@@ -347,7 +346,7 @@ img {
 /* DROPDOWN BOKSE */
 
 .dropdowntekst1, .dropdowntekst2{
-    width: 80%;
+    width: 95%;
 
 }
 
@@ -426,6 +425,10 @@ summary {
 
     .dropdowntekst1 {
         margin-left: 150px;
+    }
+
+    .dropdowntekst1, .dropdowntekst2{
+    width: 80%;
     }
 
     .underdel {
