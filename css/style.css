@@ -188,6 +188,7 @@ footer p:last-child{
     grid-column: 1 / 4;
     justify-self: center;
     grid-row: 3;
+    white-space: nowrap;
 }
 
 footer button{
