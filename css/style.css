@@ -189,7 +189,6 @@ footer p:last-child{
     grid-column: 1 / 4;
     justify-self: center;
     grid-row: 3;
-    white-space: nowrap;
 }
 
 footer button{
@@ -221,7 +220,7 @@ a{
 
 header {
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2% 1fr 80% 1fr 2%;
+    grid-template-columns: 2% 8% 80% 8% 2%;
 }
 
 header nav{
@@ -243,9 +242,7 @@ header nav li{
 }
 
 header nav li a {
-    white-space: nowrap;
-    font-size: 22px;
-    color: black;
+    color: black; 
     padding: 10px;
     display: block;
 }
@@ -253,7 +250,13 @@ header nav li a {
 /* Hovedindhold */
 .menupunkter{
     grid-column: 2 / span 5;
-    max-width: 100%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.highlightet{
+    font-size: 22px;
+    object-fit: contain;
 }
 
 button#search{
@@ -279,11 +282,13 @@ button#search{
 }
 
 .menubokse p{
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .os-billede{
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
     height: 300px;
     object-fit: cover;
 }
