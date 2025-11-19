@@ -107,6 +107,7 @@ button#bars{
 .highlightet{
     font-size: 40px;
     font-weight: 800;
+    white-space: nowrap;
 }
 
 /* Hovedindhold */
