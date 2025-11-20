@@ -14,14 +14,14 @@ header{
     background-color: #f2f2f2;
     height: auto;
     display: grid;
-    grid-template-columns: 40% 1fr 1fr 1fr 1fr 5% 5% 4%;
+    grid-template-columns: 40% 25% 10% 10% 10% 5%;
     align-items: center;
     position: relative;
 }
 
 header img{
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 65px;
     object-fit: cover;
     grid-column: 1;
     padding-left: 0px;
@@ -32,7 +32,7 @@ button#search {
     font-size: 30px;
     border: none;
     cursor: pointer;
-    grid-column: 6;
+    grid-column: 4;
     justify-self: end;
 }
 
@@ -82,8 +82,8 @@ button#bars{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 30px;
-    grid-column: 7;
+    font-size: 25px;
+    grid-column: 5;
     justify-self: start;
 }
 
@@ -97,7 +97,7 @@ button#bars{
 }
 
 .hero h1{
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 10px;
     font-weight: 400;
     line-height: 1;
@@ -105,7 +105,7 @@ button#bars{
 }
 
 .highlightet{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
     white-space: nowrap;
 }
