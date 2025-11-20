@@ -247,6 +247,17 @@ header nav li a {
     display: block;
 }
 
+nav ul li a.aktiv{
+    font-weight: 900;
+    color: #0764B0;
+    border-bottom: 3px solid #0764B0;
+}
+
+nav ul li a.aktiv:hover{
+    color: #0764B0;
+    background: transparent;
+}
+
 /* Hovedindhold */
 .menupunkter{
     grid-column: 2 / span 5;
