@@ -248,7 +248,6 @@ header nav li a {
 }
 
 nav ul li a.aktiv{
-    font-weight: 900;
     color: #0764B0;
     border-bottom: 3px solid #0764B0;
 }
