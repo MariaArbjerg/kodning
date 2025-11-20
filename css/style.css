@@ -540,6 +540,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea{
 .radiokasser label{
     padding-left: 1em;
 }
+
 select, input[type=checkbox], input[type=radio], input[type=subit]{
 	cursor: pointer;
 }
