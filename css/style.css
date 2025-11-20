@@ -221,6 +221,9 @@ a{
 header {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2% 8% 80% 8% 2%;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
 }
 
 header nav{
